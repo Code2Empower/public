@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html>
+
+
+
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="description" content="View the latest Far Cry Primal trailers here! Buy now on PS4, XBOX One, and PC!">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<title>
+	Resource Generator
+</title>
+<link rel="stylesheet" href="https://webmadeclear.com/public/demos/resource-finder/window.css" type="text/css" media="all">
+</head>
+
+
+
+<body>
+<div class="container header-container">
+	<h1>Resource Generator</h1>
+</div>
+
+<div class="container text-container">
+	<h3>Instructions</h3>
+	<P>
+		<ol>
+			<li>Select the file types you wish to find</li>
+			<li>Select the locales to include</li>
+			<li>Click 'Generate Files'</li> 
+		</ol>
+	</P>
+</div>
+
+<div class="container form-container">
+	<h3>Select Criteria</h3>
+	<form id="form">
+
+		<div class="item type-item">
+			<h6>File Types</h6>
+			<input type="checkbox" name="type" value="js" checked> Javascript (.js)<br>
+			<input type="checkbox" name="type" value="css" checked> Cascading Style Sheets (.css)<br>
+			<input type="checkbox" name="type" value="img" checked> Images (.png, .jpg, .gif, .svg, .ico)<br>
+			<br>
+		</div>
+
+		<div class="item locale-item ncsa-item">
+				<h6>NCSA</h6>
+				<br>
+				<input type="checkbox" name="locale" class="locale" value="en-US" checked> en-US<br>
+				<input type="checkbox" name="locale" class="locale" value="en-CA" checked> en-CA<br>
+				<input type="checkbox" name="locale" class="locale" value="fr-CA" checked> fr-CA<br>
+				<input type="checkbox" name="locale" class="locale" value="es-MX" checked> es-MX<br>
+				<input type="checkbox" name="locale" class="locale" value="pt-BR" checked> pt-BR<br>
+				<br>
+				<input type="checkbox" name="ncsa-all" value="all" class="all ncsa-all" checked> Select All<br>
+			</span>
+		</div>
+
+		<div class="item locale-item emea-item ">
+			<h6>EMEA</h6>
+			<br>
+			<input type="checkbox" name="locale" class="locale" value="fr-FR"> fr-FR<br>
+			<input type="checkbox" name="locale" class="locale" value="es-ES"> es-ES<br>
+			<input type="checkbox" name="locale" class="locale" value="it-IT"> it-IT<br>
+			<input type="checkbox" name="locale" class="locale" value="en-GB"> en-GB<br>
+			<input type="checkbox" name="locale" class="locale" value="de-DE"> de-DE<br>
+			<br>
+			<input type="checkbox" name="locale" class="locale" value="nl-NL"> nl-NL<br>
+			<input type="checkbox" name="locale" class="locale" value="pl-PL"> pl-PL<br>
+			<input type="checkbox" name="locale" class="locale" value="ru-RU"> ru-RU<br>
+			<input type="checkbox" name="locale" class="locale" value="en-AU"> en-AU<br>
+			<input type="checkbox" name="locale" class="locale" value="ja-JP"> ja-JP<br>
+			<br>
+			<input type="checkbox" name="emea-all" value="all" class="all emea-all"> Select All<br>
+		</div>
+	</form>
+	<br>
+
+	<div class="item submit-item">
+		<button type="button" class="btn" onclick="outputLinks();">Generate Files</button>
+	</div>
+</div>
+
+<div class="container output-container">
+	<h3>Files</h3>
+	<div class="box copy-box">
+		<h5>All Files</h5>
+		<span class="copy">
+			<textarea rows="8" cols="60"></textarea>
+		</span>
+	</div>
+	<div class="box js-box">
+		<h5>Javascript Files</h5>
+		<span class="js"></span>
+	</div>
+	<div class="box css-box">
+		<h5>CSS Files</h5>
+		<span class="css"></span>
+	</div>
+	<div class="box img-box">
+		<h5>Image Files</h5>
+		<span class="img"></span>
+	</div>
+</div>
+
+
+<!--scripts added from crawl.js-->
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+<script type="text/javascript" src="https://webmadeclear.com/public/demos/resource-finder/window.js"></script>
+</body>
+
+
+
+
+</html>
